@@ -1,0 +1,84 @@
+:root {
+    --color-text: #f3f3f3;
+    --color-primary: #080F26;
+    --color-accent: #3b3b4f;
+    --color-green: #00ff00;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-family: "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  h1,
+  p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid var(--color-accent);
+  }
+  
+  form fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin: 1em 0;
+  }
+  
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #182344;
+    border: 0;
+    color: var(--color-text);
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: var(--color-green);
+    border-color: var(--color-text);
+    border-radius: 10px;
+    color: var(--color-text);
+    min-width: 300px;
+  }

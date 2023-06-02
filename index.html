@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey form</p>
+
+    <form id="survey-form" method="post" action='example.com'>
+
+      <fieldset>
+        <label id="name-label"for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your Name" required />
+
+        <label id ="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter your Email" required />
+
+        <label id="number-label" for="number">Age</label>
+        <input id="number" name="number" type="number" placeholder="Age" required min="13" max="120"/>
+      <fieldset>
+        
+      <fieldset>
+        <label>Would you recommend us to a friend?</label>
+          <label for="recommendation-definitely">
+            <input id="recommendation-definitely" type="radio" value="definitely" name="recommendation" class="inline" required/> Definitely
+          </label>
+          <label for="recommendation-maybe">
+            <input id="recommendation-maybe" type="radio" value="maybe" name="recommendation" class="inline" /> Maybe
+          </label>
+          <label for="recommendation-no">
+            <input id="recommendation-no" type="radio" value="no" name="recommendation" class="inline" /> No
+          </label>
+      <fieldset>
+        
+
+      <fieldset>
+        <label for="rating">How would you rate our service?</label>
+        <select id="rating" name="rating" required>
+          <option value="">(select one)</option>
+          <option value="1">1 (Poor)</option>
+          <option value="2">2</option>
+          <option value="3">3 (Average)</option>
+          <option value="4">4</option>
+          <option value="5">5 (Excellent)</option>
+        </select>
+      
+      <label for="referrer">How did you hear about us?
+        <select id="dropdown" name="dropdown" required>
+          <option value="">(select one)</option>
+          <option value="1">Online</option>
+          <option value="2">Social Media</option>
+          <option value="3">Advertising</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+
+        
+      <label for="comment">Any Other Comments?
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+      </label>
+
+      </fieldset>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" value="False" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          <label for="updates">
+            <input id="updates" type="checkbox" value="False" name="updates" class="inline" /> I want to receive updates
+          </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
